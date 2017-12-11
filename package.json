@@ -1,0 +1,50 @@
+{
+    "name": "egg-super-mongo",
+    "version": "1.0.0",
+    "description": "egg mongoose plugin",
+    "eggPlugin": {
+        "name": "superMongo"
+    },
+    "main": "./index.js",
+    "keywords": [
+        "egg",
+        "egg-model",
+        "mongoose",
+        "eggPlugin",
+        "egg-plugin"
+    ],
+    "dependencies": {
+        "mongoose": "^4.13.6",
+        "mongoose-findorcreate": "^2.0.0",
+        "source-map-support": "^0.5.0"
+    },
+    "devDependencies": {
+        "@types/egg": "*",
+        "@types/mongoose": "^4.7.28",
+        "egg": "^2.0.0",
+        "typescript": "^2.6.2",
+        "webstorm-disable-index": "^1.2.0"
+    },
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "scripts": {
+        "watch": "echo -en \"\\ec\\0typescript compiling...\\r\";tsc -w -p . | sed 's/^.*File change detected/\\x1Bc\\0/g'",
+        "compile": "tsc -p ."
+    },
+    "files": [
+        "index.js",
+        "app.js",
+        "agent.js",
+        "config",
+        "app",
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GongT/egg-super-mongo.git"
+    },
+    "bugs": {
+        "url": "https://github.com/GongT/egg-super-mongo/issues"
+    }
+}

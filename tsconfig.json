@@ -1,0 +1,10 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "inlineSources": true,
+        "inlineSourceMap": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "lib": ["es5", "es6", "es7"]
+    }
+}
