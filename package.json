@@ -1,5 +1,5 @@
 {
-    "name": "egg-super-mongo",
+    "name": "@gongt/egg-super-mongo",
     "version": "1.0.0",
     "description": "egg mongoose plugin",
     "eggPlugin": {
