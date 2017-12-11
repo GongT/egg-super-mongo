@@ -1,21 +1,21 @@
-# egg-super-mongo
+# @gongt/egg-super-mongo
 [![NPM version][npm-image]][npm-url]
 [![David deps][david-image]][david-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-super-mongo.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-super-mongo
-[david-image]: https://img.shields.io/david/eggjs/egg-super-mongo.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-super-mongo
-[download-image]: https://img.shields.io/npm/dm/egg-super-mongo.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-super-mongo
+[npm-image]: https://img.shields.io/npm/v/@gongt/egg-super-mongo.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@gongt/egg-super-mongo
+[david-image]: https://img.shields.io/david/eggjs/@gongt/egg-super-mongo.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/@gongt/egg-super-mongo
+[download-image]: https://img.shields.io/npm/dm/@gongt/egg-super-mongo.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@gongt/egg-super-mongo
 
 Egg's MongoDB plugin.
 
 ## Install
 
 ```bash
-$ npm i egg-super-mongo --save
+$ npm i @gongt/egg-super-mongo --save
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ $ npm i egg-super-mongo --save
 // {app_root}/config/plugin.js
 exports.superMongo = {
   enable: true,
-  package: 'egg-super-mongo',
+  package: '@gongt/egg-super-mongo',
 };
 ```
 
@@ -54,7 +54,7 @@ see [config/config.default.ts](config/config.default.ts) for more detail.
 ## Example
 ```js
 // app/model/user.js
-import {EggMongoose} from "egg-super-mongo";
+import {EggMongoose} from "@gongt/egg-super-mongo";
 import {Schema} from "mongoose";
 
 export class UserModel extends EggMongoose {
