@@ -1,5 +1,5 @@
 'use strict';
-import {ConnectionOptions} from "mongoose";
+import {ConnectionOptions, Schema} from "mongoose";
 
 export interface ClientOption extends ConnectionOptions {
     url: string;
@@ -11,6 +11,8 @@ export interface SuperMongoConfig {
     app: boolean;
     agent: boolean;
     allowOverwride: boolean;
+    
+    schemaCommonSetting?(schema: Schema): void;
 }
 
 export type MapLike<T> = {

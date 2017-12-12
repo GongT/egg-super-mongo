@@ -53,7 +53,7 @@ see [config/config.default.ts](config/config.default.ts) for more detail.
 
 ## Example
 ```js
-// app/model/user.js
+// app/super-model/user.js
 import {EggMongoose} from "@gongt/egg-super-mongo";
 import {Schema} from "mongoose";
 
@@ -70,7 +70,7 @@ export class UserModel extends EggMongoose {
   }
   
   getUserById(id){
-    this.model.findOne({ _id: id }); // ...
+    this.__model.findOne({ _id: id }); // ...
   }
 }
 ```
@@ -78,7 +78,7 @@ export class UserModel extends EggMongoose {
 
 ## Example (es5)
 ```js
-// app/model/user.js
+// app/super-model/user.js
 module.exports = app => {
   const EggMongoose = app.SuperMongo;
   

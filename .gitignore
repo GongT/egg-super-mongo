@@ -7,8 +7,4 @@ run/
 .DS_Store
 *.swp
 
-lib/**/*.js
-config/**/*.js
-app/**/*.js
-/agent.js
-/app.js
+*.js
