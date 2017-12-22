@@ -5,6 +5,7 @@
         "inlineSourceMap": true,
         "target": "esnext",
         "module": "commonjs",
+        "declaration": true,
         "lib": ["es5", "es6", "es7"]
     }
 }
