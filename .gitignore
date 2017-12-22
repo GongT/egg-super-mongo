@@ -10,3 +10,4 @@ run/
 *.js
 *.d.ts
 package-lock.json
+_types/

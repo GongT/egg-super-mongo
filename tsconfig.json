@@ -24,5 +24,6 @@
         "typeRoots": [],
         "experimentalDecorators": true,
         "outDir": "../dist"
-    }
+    },
+    "exclude": ["_types"]
 }

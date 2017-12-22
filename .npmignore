@@ -15,3 +15,4 @@ run
 
 tsconfig.json
 package-lock.json
+_types
