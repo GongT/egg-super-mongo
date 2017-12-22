@@ -6,6 +6,23 @@
         "target": "esnext",
         "module": "commonjs",
         "declaration": true,
-        "lib": ["es5", "es6", "es7"]
+        "lib": ["es2015", "es2016", "es2017", "esnext"],
+        "stripInternal": true,
+        "strictNullChecks": false,
+        "preserveConstEnums": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitThis": true,
+        "noImplicitAny": false,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noEmitOnError": true,
+        "forceConsistentCasingInFileNames": true,
+        "alwaysStrict": true,
+        "locale": "zh-CN",
+        "preserveSymlinks": true,
+        "types": [],
+        "typeRoots": [],
+        "experimentalDecorators": true,
+        "outDir": "../dist"
     }
 }

@@ -1,18 +1,18 @@
 import {Db} from "mongodb";
-import {Connection, createConnection, Document, Model, Schema} from 'mongoose';
+import {Connection, Document, Model, Schema} from 'mongoose';
 import {ConnectionRegistry, SuperMongoEggApplication} from "./mongoose.lib";
 
 const util = require('util');
 
-export interface EggMongooseConstructor<T extends Document = any> {
+export interface EggMongooseConstructor<T = any> {
     new (app: SuperMongoEggApplication, registry: ConnectionRegistry): EggMongoose<T>;
 }
 
-export abstract class EggMongoose<T extends Document = any> {
-    protected readonly model: Model<T>;
+export abstract class EggMongoose<T = any> {
+    protected readonly model: Model<T&Document>;
     protected readonly db: Db;
     
-    constructor(private app: SuperMongoEggApplication, protected registry: ConnectionRegistry) {
+    constructor(app: SuperMongoEggApplication, registry: ConnectionRegistry) {
         if (this.constructor === EggMongoose) {
             throw new TypeError(`Can not create instance of abstract class EggMongoose.`);
         }

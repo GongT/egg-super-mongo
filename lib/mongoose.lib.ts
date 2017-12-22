@@ -1,7 +1,7 @@
 import * as assert from 'assert';
 import {EggAppConfig, EggApplication, Logger} from "egg";
 import * as mongoose from 'mongoose';
-import {Connection, createConnection, Schema} from 'mongoose';
+import {Connection, createConnection} from 'mongoose';
 import {join} from 'path';
 import {ClientOption, SuperMongoConfig} from "../config/config.default";
 import {EggMongoose, EggMongooseConstructor} from "./mongoose.class";

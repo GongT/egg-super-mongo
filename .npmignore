@@ -1,11 +1,17 @@
-logs/
+**/*.ts
+!**/*.d.ts
+
+logs
 npm-debug.log
-node_modules/
-coverage/
-.idea/
-run/
+node_modules
+coverage
+.idea
+.git
+run
 .DS_Store
 *.swp
 .github
+*.tgz
 
+tsconfig.json
 package-lock.json

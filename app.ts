@@ -1,7 +1,7 @@
 import "source-map-support/register"
-import {attachMongo} from './lib/mongoose.lib';
+import {attachMongo, SuperMongoEggApplication} from './lib/mongoose.lib';
 
-module.exports = app => {
+module.exports = (app: SuperMongoEggApplication) => {
     if (app.config.superMongo.app) {
         attachMongo(app);
     }

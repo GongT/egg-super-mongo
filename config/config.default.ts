@@ -6,8 +6,8 @@ export interface ClientOption extends ConnectionOptions {
 }
 
 export interface SuperMongoConfig {
-    client: ClientOption;
-    clients: MapLike<ClientOption>,
+    client?: ClientOption;
+    clients?: MapLike<ClientOption>,
     app: boolean;
     agent: boolean;
     allowOverwride: boolean;
@@ -23,8 +23,6 @@ export type MapLike<T> = {
  * mongo default config
  */
 export let superMongo: SuperMongoConfig = {
-    client: null,
-    clients: null,
     app: true,
     agent: false,
     allowOverwride: false,

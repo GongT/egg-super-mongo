@@ -1,6 +1,6 @@
 {
     "name": "@gongt/egg-super-mongo",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "description": "egg mongoose plugin",
     "eggPlugin": {
         "name": "superMongo"
@@ -31,14 +31,6 @@
         "watch": "echo -en \"\\ec\\0typescript compiling...\\r\";tsc -w -p . | sed 's/^.*File change detected/\\x1Bc\\0/g'",
         "compile": "tsc -p ."
     },
-    "files": [
-        "*.js",
-        "*.ts",
-        "*.d.ts",
-        "config",
-        "app",
-        "lib"
-    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/GongT/egg-super-mongo.git"
