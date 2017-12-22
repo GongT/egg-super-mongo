@@ -9,8 +9,8 @@ export interface EggMongooseConstructor<T extends Document = any> {
 }
 
 export abstract class EggMongoose<T extends Document = any> {
-    protected readonly __model: Model<T>;
-    protected readonly __db: Db;
+    protected readonly model: Model<T>;
+    protected readonly db: Db;
     
     constructor(private app: SuperMongoEggApplication, protected registry: ConnectionRegistry) {
         if (this.constructor === EggMongoose) {
@@ -25,7 +25,7 @@ export abstract class EggMongoose<T extends Document = any> {
             app.coreLogger.warn('registered connection:', ...registry.keys());
             throw new TypeError(`You can not use connection "${this.connection}" without declare it in config file.`);
         }
-        this.__db = conn.db;
+        this.db = conn.db;
         
         let modelName = this.constructor.name;
         if (!/Model$/i.test(modelName)) {
@@ -37,7 +37,7 @@ export abstract class EggMongoose<T extends Document = any> {
         if (!schema) {
             throw new TypeError(`module ${modelName} do not declare any Schema.`);
         }
-        this.__model = conn.model(modelName, schema, collectName);
+        this.model = conn.model(modelName, schema, collectName);
         // Promise.promisifyAll(this.model);
         app.coreLogger.debug(`created new model: ${modelName}(collection: ${this.collectionName || modelName})`);
     }
