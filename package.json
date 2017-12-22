@@ -1,6 +1,6 @@
 {
     "name": "@gongt/egg-super-mongo",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "egg mongoose plugin",
     "eggPlugin": {
         "name": "superMongo"
@@ -32,9 +32,9 @@
         "compile": "tsc -p ."
     },
     "files": [
-        "index.js",
-        "app.js",
-        "agent.js",
+        "*.js",
+        "*.ts",
+        "*.d.ts",
         "config",
         "app",
         "lib"
