@@ -14,7 +14,7 @@
         "egg-plugin"
     ],
     "dependencies": {
-        "mongoose": "^4.13.6",
+        "mongoose": "^5.10.2",
         "source-map-support": "^0.5.0"
     },
     "devDependencies": {
